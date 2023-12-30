@@ -272,7 +272,7 @@
 
 .practicum-grid img, .scale-image img {
   width: 100%; /* Full width of the grid column */
-  max-width: 1200px;
+  max-width: 800px;
   height: auto; /* Maintain aspect ratio */
   object-fit: contain; /* Cover the area, may crop the image */
   border-radius: 15px; /* Subtle rounded corners */
