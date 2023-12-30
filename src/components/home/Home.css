@@ -542,31 +542,79 @@ blockquote {
 }
 
 @media (max-width: 768px) {
-  .hamburger {
-    display: block;
+  .container {
+    width: 95%; /* Increase width on smaller screens for better use of space */
   }
 
-  .nav-links {
-    display: none;
+  .nav-links li {
+    margin: 0 20px; /* Decrease margin for smaller screens */
   }
 
   .intro {
-    grid-template-columns: 1fr;
-    text-align: center;
+    grid-template-columns: 1fr; /* Stack elements vertically */
+    gap: 10px; /* Reduce gap */
   }
 
-  .intro-text, .intro-image {
-    padding: 20px;
+  .profile-img {
+    width: 80%; /* Increase width for smaller screens */
+    margin-left: 10%; /* Adjust margin to center the image */
   }
 
-  .practicum-grid, .scale-image {
-    grid-template-columns: 1fr;
+  .intro-text {
+    font-size: 24px; /* Decrease font size for smaller screens */
   }
 
-  .ce-gallery {
-    grid-template-columns: 1fr; /* Stack images in a single column on smaller screens */
+  .intro-title, .intro-subtitle {
+    font-size: 36px; /* Decrease font size for titles */
   }
 
-  
+  .practicum-grid img, .ce-slide img, .oe-images img {
+    width: 100%; /* Full width images */
+  }
+
+  .practicum-grid img:nth-of-type(4), .oe-images img:nth-child(3) {
+    transform: scale(1); /* Reset scale */
+  }
+
+  .practicum, .ce-section, .oe-section, .academic-artefacts {
+    border-radius: 60px; /* Smaller border-radius for a subtler effect */
+  }
+
+  .practicum:hover, .ce-section:hover, .oe-section:hover, .academic-artefacts:hover {
+    transform: translateY(0); /* Disable hover effect */
+    box-shadow: 0 4px 8px rgba(174, 214, 241, 0.5); /* Less pronounced shadow */
+  }
+
+  .event-item {
+    flex: 0 0 100%; /* Full width items */
+  }
+
+  /* Other responsive adjustments as needed */
+}
+
+/* Media Query for Mobile Phones */
+@media (max-width: 480px) {
+  .nav-links li {
+    margin: 0 10px; /* Even smaller margin */
+  }
+
+  .intro-title, .intro-subtitle {
+    font-size: 28px; /* Further reduce font size */
+  }
+
+  .cv-link, .carousel-controls button {
+    font-size: 14px; /* Smaller buttons and links */
+    padding: 5px 10px; /* Smaller padding */
+  }
+
+  .section-main-header, .section-title {
+    font-size: 24px; /* Smaller section titles */
+  }
+
+  .practicum-description, .ce-description, .oe-description, .artefacts-description {
+    font-size: 14px; /* Smaller text in descriptions */
+  }
+
+  /* Adjustments to other elements as needed for better mobile experience */
 }
 
