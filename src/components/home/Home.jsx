@@ -26,10 +26,6 @@ import aaimg6 from '../../assets/aaimg6.jpg'; // Import the AA Image 6
 import aaimg7 from '../../assets/aaimg7.jpg'; // Import the AA Image 7
 
 import sieimg1 from '../../assets/aaimg7.jpg'; // Import the AA Image 7
-import sieimg2 from '../../assets/aaimg7.jpg'; // Import the AA Image 7
-import sieimg3 from '../../assets/aaimg7.jpg'; // Import the AA Image 7
-
-import bgimg from '../../assets/bgtest.jpg'; // Import the AA Image 7
 
 import nweCV from '../../assets/nweresume.pdf'; // Import CV
 
@@ -132,9 +128,6 @@ const Home = () => {
     setShowNav(!showNav);
   };
 
-  const goToCESlide = (index) => {
-    setCurrentCESlide(index);
-  };
 
   const nextCESlide = () => {
     setCurrentCESlide((prevIndex) => (prevIndex + 1) % ceImages.length);
