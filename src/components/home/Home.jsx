@@ -4,8 +4,7 @@ import './Home.css'; // Import the CSS file
 import profileImg from '../../assets/profile-img.png'; // Import your profile picture
 
 import pracImage1 from '../../assets/egprac1.jpg'; // Import the Practicum Image 1
-import pracImage2 from '../../assets/egprac2.jpg'; // Import the Practicum Image 2
-import pracImage3 from '../../assets/prac3.jpg'; // Import the Practicum Image 3
+import pracImage3 from '../../assets/egprac2.jpg'; // Import the Practicum Image 3
 import pracImage4 from '../../assets/prac4.jpg'; // Import the Practicum Image 4
 
 import ceimg1 from '../../assets/ceimg1.jpg'; // Import the CE Image 1
@@ -25,7 +24,9 @@ import aaimg5 from '../../assets/aaimg5.jpg'; // Import the AA Image 5
 import aaimg6 from '../../assets/aaimg6.jpg'; // Import the AA Image 6
 import aaimg7 from '../../assets/aaimg7.jpg'; // Import the AA Image 7
 
-import sieimg1 from '../../assets/aaimg7.jpg'; // Import the AA Image 7
+import sieimg1 from '../../assets/sieimg1.jpg'; // Import the SIE Image 1
+import sieimg2 from '../../assets/sieimg2.jpg'; // Import the SIE Image 2
+import sieimg3 from '../../assets/sieimg3.jpg'; // Import the SIE Image 3
 
 import nweCV from '../../assets/nweresume.pdf'; // Import CV
 
@@ -98,30 +99,30 @@ const Home = () => {
 
   const selfInitiatedEventsData = [
     {
-      imageSrc: sieimg1,
-      title: 'Event 1 Name',
-      description: 'Just the day before, our host had written of the challenges of writing short.',
+      imageSrc: sieimg2,
+      title: 'Internship at Pathlight School, Autism Resource Centre',
+      description: "During my internship at Pathlight School's Autism Resource Centre as a teacher aide, I immersed myself in supporting children with autism. This role was a significant step in aligning with my passion for inclusive education and the welfare of children and youth. It allowed me to contribute meaningfully to a specialized educational setting, enhancing my understanding and skills in addressing the unique needs of students with autism."
     },
     {
-      imageSrc: sieimg1,
-      title: 'Event 2 Name',
-      description: 'can also be an excellent way for a writer to tackle writers block. Writing block can often happen due to being stuck with a current project that the writer is trying to complete. By inserting a completely random paragraph from which to begin, it can take down some of the issues that may have been causing the writers block in the first place. Another productive way to use this tool to begin a daily writing routine,'
+      imageSrc: sieimg3,
+      title: 'Tutor & Student Care Teacher',
+      description: "As a mathematics tutor for primary students and a student care teacher, I blend academic instruction with nurturing mentorship. These roles reflect my passion for the children and youth sector, allowing me to support young learners' intellectual and personal growth. Through tutoring and student care, I contribute to their holistic development, aligning with my ongoing commitment to this field."
 
     },
     {
       imageSrc: sieimg1,
-      title: 'Event 3 Name',
-      description: 'A random paragraph can also be an excellent way for a writer to tackle writers block.',
+      title: "Participation in MSF's Wellness Talk",
+      description: "I participated in the Ministry of Social and Family Development's Wellness Talk, an initiative focusing on mental and emotional well-being. This involvement not only broadened my understanding of wellness in social contexts but also underscored the importance of integrating these principles into social work practices. It was an enlightening experience that reinforced my commitment to holistic approaches in the social service sector.",
     },
   ];
   
   
   const ceImages = [ceimg1, ceimg2, ceimg3, ceimg4];
   const ceDescriptions = [
-    "Just the day before, our host had written of the challenges of writing short. In journalism–my friend’s chosen trade, and mostly my own, too–Mark Twain’s observation undoubtedly applies: “I didn’t have time to write a short letter, so I wrote a long one instead.” The principle holds across genres, in letters, reporting, and other writing. It’s harder to be concise than to blather. (Full disclosure, this blog post will clock in at a blather-esque 803 words.) Good writing is boiled down, not baked full of air like a souffl??. No matter how yummy souffl??s may be. Which they are. Yummy like a Grisham novel.",
-    "Generating random paragraphs can be an excellent way for writers to get their creative flow going at the beginning of the day. The writer has no idea what topic the random paragraph will be about when it appears. This forces the writer to use creativity to complete one of three common writing challenges. The writer can use the paragraph as the first one of a short story and build upon it. A second option is to use the random paragraph somewhere in a short story they create. The third option is to have the random paragraph be the ending paragraph in a short story. No matter which of these challenges is undertaken, the writer is forced to use creativity to incorporate the paragraph into their writing.",
-    "A random paragraph can also be an excellent way for a writer to tackle writers' block. Writing block can often happen due to being stuck with a current project that the writer is trying to complete. By inserting a completely random paragraph from which to begin, it can take down some of the issues that may have been causing the writers' block in the first place.",
-    "Another productive way to use this tool to begin a daily writing routine. One way is to generate a random paragraph with the intention to try to rewrite it while still keeping the original meaning. The purpose here is to just get the writing started so that when the writer goes onto their day's writing projects, words are already flowing from their fingers."
+    "I engaged with elderly patients at Sengkang Community Hospital, facilitating various games and activities. This experience deepened my understanding of social responsibility and empathy, particularly in elderly care. It was a journey filled with meaningful interactions that shaped my personal and professional aspirations, steering me towards a future in healthcare and community service.",
+    "I engaged with elderly patients at Sengkang Community Hospital, facilitating various games and activities. This experience deepened my understanding of social responsibility and empathy, particularly in elderly care. It was a journey filled with meaningful interactions that shaped my personal and professional aspirations, steering me towards a future in healthcare and community service.",
+    "I engaged with elderly patients at Sengkang Community Hospital, facilitating various games and activities. This experience deepened my understanding of social responsibility and empathy, particularly in elderly care. It was a journey filled with meaningful interactions that shaped my personal and professional aspirations, steering me towards a future in healthcare and community service.",
+    "I engaged with elderly patients at Sengkang Community Hospital, facilitating various games and activities. This experience deepened my understanding of social responsibility and empathy, particularly in elderly care. It was a journey filled with meaningful interactions that shaped my personal and professional aspirations, steering me towards a future in healthcare and community service."
   ];
 
   const toggleNav = () => {
@@ -146,7 +147,7 @@ const Home = () => {
        {/* Shooting star element */}
       <div className="shooting-star"></div>
       <div className='top-nav'>
-        <div className='container'>
+        
           <ul className={`nav-links ${showNav ? 'active' : ''}`}>
             <li><a href='#home'>Home</a></li>
             <li><a href='#' onClick={handlePracticumClick}>Practicum</a></li>
@@ -160,16 +161,21 @@ const Home = () => {
             <div className='line'></div>
             <div className='line'></div>
           </div>
-        </div>
+      
       </div>
 
       <div className='container'>
         <div className='intro'>
           <div className='intro-text'>
-            <h1 className='intro-title'>Neo Wei En</h1>
-            <p className='intro-subtitle'>SUSS Social Worker</p>
+            <h1 className='intro-title'>Neo Wei En (Y2082762)</h1>
+            <p className='intro-subtitle'>C2020 - ePortfolio</p>
+            <p className='intro-subtitle'>Website is developed from scratch using React JS, click on each topic to know more!</p>
             <p className='intro-description'>
-              Welcome to my portfolio! I am a social worker passionate about making a difference.
+            Hello! I’m currently a student at the Singapore University of Social Sciences, working towards my Bachelor of Social Work with a Minor in Psychology. My educational journey, beginning at Pasir Ris Secondary School and continuing at Tampines Meridian Junior College, has fueled my passion for the social service sector.
+
+With a focus on the children, youth, and elderly sectors, I’ve gained practical experience through various roles. This includes a meaningful internship at Pathlight School’s Autism Resource Centre, years of tutoring, and my current part-time engagement at a student care center. Each experience has enriched my understanding and commitment to social work.
+
+I’m excited to continue my journey, leveraging my academic and practical experiences to make a meaningful impact in the lives of those I serve.
             </p>
             <a href={nweCV} className='cv-link' download>
               Download CV
@@ -184,7 +190,9 @@ const Home = () => {
 
       
           {/* Practicum Sections */}
+          
           <div className='practicum' id='practicum'>
+            
           <h2 className='section-main-header' onClick={() => setIsPracticumOpen(!isPracticumOpen)}>
             My Practicum Experiences
           </h2>
@@ -197,24 +205,19 @@ const Home = () => {
              
               <div className='practicum-grid'>
                 <img src={pracImage1} alt='Practicum 1' />
-                <img src={pracImage2} alt='Practicum 2' />
-               
+                
               </div>
               <div className='practicum-description'>
              
                 <blockquote>
-"Practicum Experiences" typically refers to a period of practical 
-experience in a professional setting, often integrated as a key component 
-of academic courses in fields like social work, education, healthcare, and 
-psychology. These experiences are designed to give students hands-on, real-world
- experience in their chosen field under the supervision of experienced 
- professionals. This practical training is crucial for bridging the gap 
- between theoretical knowledge and practical skills, allowing students to
-  apply classroom learning in real-life scenarios, develop professional 
-  competencies, and gain a deeper understanding of their field. It's an
-  invaluable opportunity for personal and professional growth, helping
-   students to build confidence, refine their skills, and make informed 
-   career choices.
+ <h2 class="headline">Filos Community Services</h2>
+During my practicum at Filos Community Services, I had the enriching opportunity to work both as a social worker and a program coordinator. Under the guidance of experienced social workers, I was involved in handling community cases, particularly within the COMIT (Community Intervention Team) and CREST (Community Resources, Engagement, and Support Team) frameworks.
+
+COMIT primarily focuses on providing community-based support to individuals and families facing psychosocial issues. Working within this team allowed me to understand the complexities of mental health and the importance of tailored community interventions. Meanwhile, CREST aims at supporting the elderly in the community, focusing on their well-being and social needs. This involvement gave me firsthand experience in elderly care and the nuances of managing age-related challenges.
+
+In addition to these roles, I coordinated and facilitated programs specifically designed for children and youth from lower-income families. This responsibility entailed not only program planning and execution but also direct engagement with the children and youths, ensuring that the programs were both educational and enjoyable. This aspect of my practicum was particularly rewarding as it allowed me to contribute positively to the lives of these young individuals, fostering their growth and development in meaningful ways.
+
+My time at Filos Community Services was a defining period in my professional development, enhancing my skills in social work and program coordination while also deepening my commitment to community service.
    </blockquote>
 
               </div>
@@ -227,10 +230,9 @@ psychology. These experiences are designed to give students hands-on, real-world
               
               
               <div className='practicum-grid'>
-                <img src={pracImage1} alt='Practicum 1' />
-                <img src={pracImage2} alt='Practicum 2' />
+        
                 <img src={pracImage3} alt='Practicum 3' />
-                <img src={pracImage4} alt='Practicum 4' />
+                
               </div>
 
               
@@ -238,25 +240,22 @@ psychology. These experiences are designed to give students hands-on, real-world
 
               <p className='practicum-description'>
               <blockquote>
-"Practicum Experiences" typically refers to a
- period of practical experience in a professional setting, 
- often integrated as a key component of academic courses in fields 
- like social work, education, healthcare, and psychology. 
- These experiences are designed to give students hands-on, real-world 
- experience in their chosen field under the supervision of experienced 
- professionals. This practical training is crucial for bridging the gap
- between theoretical knowledge and practical skills, allowing students 
- to apply classroom learning in real-life scenarios, develop professional
-  competencies, and gain a deeper understanding of their field. It's an
-   invaluable opportunity for personal and professional growth, helping 
-   students to build confidence, refine their skills, and make informed 
-   career choices.</blockquote>
+ <h2 class="headline">Presbyterian Community Services - Evergreen Active Ageing Centre</h2>
+ During my second practicum at the Evergreen Active Ageing Centre, under the aegis of Presbyterian Community Services, I engaged deeply in the realm of community social work. This experience allowed me to work closely with the elderly, understanding their unique needs and challenges.
+
+In this role, my primary responsibility was handling a variety of community cases. This involved direct interactions with seniors, assessing their needs, and developing tailored support plans. I was instrumental in creating solutions that addressed both immediate and long-term concerns, focusing on enhancing their quality of life and promoting active ageing.
+
+Working at Evergreen Active Ageing Centre provided me with invaluable insights into the complexities of ageing and the importance of community support systems. It honed my skills in case management, problem-solving, and empathetic communication, further solidifying my commitment to social work and community service.
+
+This practicum was not just a professional undertaking but a journey of personal growth, as I learned to navigate the diverse aspects of social work in the context of elderly care.
+   </blockquote>
             </p>
 
               </div>
             </div>
           )}
         </div>
+  
 
 
        {/* CE Section */}
@@ -267,12 +266,14 @@ psychology. These experiences are designed to give students hands-on, real-world
            <span className='carousel-arrow left-arrow' onClick={prevCESlide}>&lt;</span>
            <span className='carousel-arrow right-arrow' onClick={nextCESlide}>&gt;</span>
 
-            {ceImages.map((img, index) => (
-              <div key={index} className={`ce-slide ${index === currentCESlide ? 'active' : ''}`}>
-                <img src={img} alt={`Community Engagement ${index + 1}`} />
-                <p className='ce-description'>{ceDescriptions[index]}</p>
-              </div>
-            ))}
+           {ceImages.map((img, index) => (
+            <div key={index} className={`ce-slide ${index === currentCESlide ? 'active' : ''}`}>
+             <img src={img} alt={`Community Engagement ${index + 1}`} />
+             <h2 className="ce-headline">Activity Facilitator for Elderly Patients</h2>
+             <p className="ce-description">{ceDescriptions[index]}</p>
+             </div>
+           ))}
+            
             <div className='carousel-controls'>
               <button className='prev' onClick={prevCESlide}>Prev</button>
               <button className='next' onClick={nextCESlide}>Next</button>
@@ -290,16 +291,19 @@ psychology. These experiences are designed to give students hands-on, real-world
       <div className='oe-images'>
         <img src={oeimg1} alt='Overseas Experience 1' />
         <img src={oeimg2} alt='Overseas Experience 2' />
+        
         <img src={oeimg3} alt='Overseas Experience 3' />
       </div>
-      <p className='oe-description'>
-      This practical training is crucial for bridging the gap
- between theoretical knowledge and practical skills, allowing students 
- to apply classroom learning in real-life scenarios, develop professional
-  competencies, and gain a deeper understanding of their field. It's an
-   invaluable opportunity for personal and professional growth, helping 
-   students to build confidence, refine their skills, and make informed 
-   career choices.
+      <p>
+      <blockquote>
+ <h2 class="headline">CommTECH Nusantara 2023: Virtual Exploration of Indonesia
+</h2>
+In January 2023, I embarked on an enriching 11-day virtual journey through Indonesia, participating in the CommTECH Nusantara program hosted by ITS Surabaya. Despite the challenges posed by the Covid-19 pandemic, this experience was a vibrant exploration of Indonesian culture, geography, and traditions, all from a digital platform.
+
+A highlight of this virtual expedition was the opportunity to creatively express my learnings. I am proud to have won the “Best Poster” award for an assignment where we were tasked to design a poster about a place in Indonesia, as showcased above. This accolade not only represents my engagement with the program but also my ability to synthesize and present cultural insights in a compelling visual format.
+
+This experience was not just an educational journey; it was a testament to my adaptability and eagerness to learn in any setting, even amidst global constraints. It stands as a unique and memorable part of my academic and cultural exploration.
+   </blockquote>
       </p>
     </div>
   )}
@@ -318,15 +322,6 @@ psychology. These experiences are designed to give students hands-on, real-world
                 <img src={imgSrc} alt={`Artefact ${index + 1}`} />
               </div>
             ))}
-            <p className='artefacts-description'>
-            This practical training is crucial for bridging the gap 
- between theoretical knowledge and practical skills, allowing students to
-  apply classroom learning in real-life scenarios, develop professional 
-  competencies, and gain a deeper understanding of their field. It's an
-  invaluable opportunity for personal and professional growth, helping
-   students to build confidence, refine their skills, and make informed 
-   career choices.
-            </p>
           </div>
         )}
       </div>
