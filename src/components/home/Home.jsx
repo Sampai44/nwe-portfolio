@@ -169,7 +169,7 @@ const Home = () => {
           <div className='intro-text'>
             <h1 className='intro-title'>Neo Wei En (Y2082762)</h1>
             <p className='intro-subtitle'>C2020 - ePortfolio</p>
-            <p className='intro-subtitle'>Website is developed from scratch using React JS, click on each topic to know more!</p>
+            <p className='intro-subtitle'>Website was developed from scratch using React JS, click on each topic to know more!</p>
             <p className='intro-description'>
             Hello! I’m currently a student at the Singapore University of Social Sciences, working towards my Bachelor of Social Work with a Minor in Psychology. My educational journey, beginning at Pasir Ris Secondary School and continuing at Tampines Meridian Junior College, has fueled my passion for the social service sector.
 
