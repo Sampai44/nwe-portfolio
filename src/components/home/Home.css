@@ -165,7 +165,7 @@
   border-radius: 10px;
   font-weight: bold;
   transition: background-color 0.3s;
-  margin-left: 195px;
+  margin-left: 125px;
 }
 
 .cv-link:hover {
@@ -272,7 +272,7 @@
 
 .practicum-grid img, .scale-image img {
   width: 100%; /* Full width of the grid column */
-  max-width: 1200px;
+  max-width: 600px;
   height: auto; /* Maintain aspect ratio */
   object-fit: contain; /* Cover the area, may crop the image */
   border-radius: 15px; /* Subtle rounded corners */
